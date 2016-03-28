@@ -15,6 +15,8 @@ categories : trouble
 	<input title="keyword" type="search" />
 </form>
 
+//也就是给input添加一个 form 外层！！！
+
 ```
 
 当然在移动端会根据不同的场景来处理这种问题， 比方说加一个搜索按钮等等，只要不妨碍用户体验就好
