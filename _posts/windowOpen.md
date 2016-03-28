@@ -1,7 +1,7 @@
 ---
 title: window.open不被拦截的解决方法之一
 tags : window
-categories : HTML
+categories : trouble
 ---
 
 > 在处理页面ajax请求过程中，想实现请求后打开新页面，就想到通过 window.open 来实现，但是最终都被浏览器拦截了。
