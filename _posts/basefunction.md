@@ -16,6 +16,17 @@ function isArray (arr){
 }
 ```
 
+### js数组排序sort()方法
+
+```
+
+//这里我们需要注意，JavaScript数组sort 是按字符编码进行排序的
+
+arr.sort(function(a,b){return a>b});//从小到大排序
+arr.sort(function(a,b){return a<b});//从大到小排序
+
+```
+
 ### 原生JavaScript实现字符串长度截取
 ```
 function cutstr(str, len) { 
