@@ -1,6 +1,6 @@
 ---
 title: HTML中SVG图像图像处理
-tags : media
+tags : API
 categories : HTML
 ---
 
