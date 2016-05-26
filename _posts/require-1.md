@@ -1,5 +1,5 @@
 ---
-title: Javascript模块化编程 —— require
+title: Javascript模块化编程 — RequireJS
 tags : require
 categories : JavaScript
 ---
@@ -13,12 +13,12 @@ RequireJS的基本思想是，通过define方法，将代码定义为模块；�
 
 ```
   　<script src="aa.js"></script>
-　　<script src="bb.js"></script>
-　　<script src="cc.js"></script>
-　　<script src="dd.js"></script>
-　　<script src="ee.js"></script>
-　　<script src="ff.js"></script>
-	……
+    <script src="bb.js"></script>
+    <script src="cc.js"></script>
+    <script src="dd.js"></script>
+    <script src="ee.js"></script>
+    <script src="ff.js"></script>
+    ……
 ```
 
 这样的写法有很大的缺点。首先，加载的时候，浏览器会停止网页渲染，加载文件越多，网页失去响应的时间就会越长；其次，由于js文件之间存在依赖关系，因此必须严格保证加载顺序（比如上例的aa.js要在bb.js的前面），依赖性最大的模块一定要放到最后加载，当依赖关系很复杂的时候，代码的编写和维护都会变得困难。
