@@ -1,5 +1,5 @@
 ---
-title: 原生JavaScript基础方法(未完成……)
+title: 原生JavaScript基础方法(连载中……)
 tags : base
 categories : JavaScript
 ---
@@ -150,4 +150,69 @@ function $(id) {
                 obj.style.display = obj.style.display == '' ? 'none' : ''; 
         } 
 } 
+```
+### 原生JavaScript简单的日期操作
+```
+    var date = new Date();               //当前日期   
+    var _DayOfWeek = date.getDay()-1;    //今天本周的第几天   
+    var _curDay = date.getDate();        //当前日   
+    var _curMonth = date.getMonth();     //当前月   
+    var _curYear = date.getFullYear();   //当前年 
+
+    //获得本周的开始日期   
+    function getWeekStartDate() {   
+        var weekStartDate = new Date(_curYear, _curMonth, _curDay - _DayOfWeek);   
+        return formatDate(weekStartDate);   
+    }   
+
+    //获得本周的结束日期   
+    function getWeekEndDate() {   
+        var weekEndDate = new Date(_curYear, _curMonth, _curDay + (6 - _DayOfWeek));   
+        return formatDate(weekEndDate);   
+    } 
+
+    //获得上周的开始日期   
+    function getLastWeekStartDate() {   
+        var weekStartDate = new Date(_curYear, _curMonth, _curDay - _DayOfWeek - 7);   
+        return formatDate(weekStartDate);   
+    }   
+
+    //获得上周的结束日期   
+    function getLastWeekEndDate() {   
+        var weekEndDate = new Date(_curYear, _curMonth, _curDay - _DayOfWeek - 1);   
+        return formatDate(weekEndDate);   
+    }
+
+    //获得本月的开始日期   
+    function getMonthStartDate() {   
+        var monthStartDate = new Date(_curYear, _curMonth, 1);   
+        return formatDate(monthStartDate);   
+    }   
+    //获得本月的结束日期   
+    function getMonthEndDate() {   
+        var monthEndDate = new Date(_curYear, _curMonth, getMonthDays(_curMonth));   
+        return formatDate(monthEndDate);   
+    }
+
+    //格式化日期：yyyy-MM-dd   
+    function formatDate(date) {   
+        var myyear = date.getFullYear();   
+        var mymonth = date.getMonth() + 1;   
+        var myweekday = date.getDate();   
+        if (mymonth < 10) {   
+            mymonth = "0" + mymonth;   
+        }   
+        if (myweekday < 10) {   
+            myweekday = "0" + myweekday;   
+        }   
+        return (myyear + "-" + mymonth + "-" + myweekday);   
+    } 
+
+    //获得某月的天数   
+    function getMonthDays(myMonth) {   
+        var monthStartDate = new Date(nowYear, myMonth, 1);   
+        var monthEndDate = new Date(nowYear, myMonth + 1, 1);   
+        var days = (monthEndDate - monthStartDate) / (1000 * 60 * 60 * 24);   
+        return days;   
+    } 
 ```
