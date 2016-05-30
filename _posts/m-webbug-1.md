@@ -1,7 +1,7 @@
 ---
 title: 触发手机端浏览器中html的搜索框input
-tags : mobileWeb
-categories : trouble
+tags : form
+categories : mobileWeb
 ---
 
 > 用html5做一个手机端浏览的网页。里面有个搜索框(input='search'),

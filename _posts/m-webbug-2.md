@@ -1,7 +1,7 @@
 ---
 title: 移动web开发中的全局设置
-tags : mobileWeb
-categories : HTML
+tags : globle
+categories : mobileWeb
 ---
 
 ## 字体设置 ##

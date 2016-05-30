@@ -1,7 +1,7 @@
 ---
 title: Android手机浏览器overflow是scroll失效
-tags : mobileWeb
-categories : trouble
+tags : scroll
+categories : mobileWeb
 ---
 
 >  在一个微信web项目中，发现Android手机浏览器中 overflow : scroll 失效
