@@ -68,7 +68,7 @@ html{font-size:10px}
 （3）设计稿都是以分辨率来标明尺寸的，前端在根据设计稿里各个元素的像素尺寸转换为rem时，该以哪个font-size为准呢？这需要去写才能知道。
 正是因为以上提到的一些不足，我觉得这种适配方式不是特别好，写起来太麻烦。为了完成工作，我们需要找寻更简单更有效率的方法。那么html5该如何去做众多移动设备的适配呢？
 
-**网易的做法**
+## 网易的做法 ##
 
 先来看看网易在不同分辨率下，呈现的效果：
 
@@ -190,13 +190,15 @@ document.documentElement.style.fontSize = deviceWidth / 6.4 + 'px';
             document.getElementsByTagName('html')[0].style.fontSize = wFsize + 'px';
             document.getElementById("fixed").style.display="none";
         }
-        // alert("fz="+wFsize+";dpr="+window.devicePixelRatio+";UA="+uAgent+";width="+wWidth+";sw="+screen.width+";wiw="+window.innerWidth+";wsw="+window.screen.width+window.screen.availWidth);
+        // alert("fz="+wFsize+";dpr="+window.devicePixelRatio+";
+        //UA="+uAgent+";width="+wWidth+";sw="+screen.width+";
+        //wiw="+window.innerWidth+";wsw="+window.screen.width+window.screen.availWidth);
     }
     resizeRoot();
     
 ```
 
-**淘宝的做法**
+## 淘宝的做法 ##
 
 淘宝的效果跟网易的效果其实是类似的，随着分辨率的变化，页面元素的尺寸和间距都相应变化，这是因为淘宝的尺寸也是使用了rem的原因。在介绍它的做法之前，先来了解一点关于viewport的知识，通常我们采用如下代码设置viewport:
 
@@ -219,7 +221,9 @@ devicePixelRatio称为设备像素比，每款设备的devicePixelRatio都是已
 ```
 var scale = 1 / devicePixelRatio;
 
-document.querySelector('meta[name="viewport"]').setAttribute('content','initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+document
+    .querySelector('meta[name="viewport"]')
+    .setAttribute('content','initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
 ```
 淘宝布局的第二个要点，就是html元素的font-size的计算公式，font-size = deviceWidth / 10：
 
@@ -230,7 +234,9 @@ document.querySelector('meta[name="viewport"]').setAttribute('content','initial-
 ```
 var scale = 1 / devicePixelRatio;
 
-document.querySelector('meta[name="viewport"]').setAttribute('content','initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
+document
+    .querySelector('meta[name="viewport"]')
+    .setAttribute('content','initial-scale=' + scale + ', maximum-scale=' + scale + ', minimum-scale=' + scale + ', user-scalable=no');
 ```
 
 （2）动态计算html的font-size : `document.documentElement.style.fontSize = document.documentElement.clientWidth / 10 + 'px';`
