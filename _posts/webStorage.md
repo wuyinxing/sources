@@ -22,23 +22,20 @@ categories : browser
 
 通过检查window对象是否包含sessionStorage和localStorage属性，可以确定浏览器是否支持这两个对象。
 
-```
-function checkStorageSupport() {
- 
+``` 
   // sessionStorage
   if (window.sessionStorage) {
-    return true;
+   	// …………
   } else {
     return false;
   }
    
   // localStorage
   if (window.localStorage) {
-    return true;
+    // …………
   } else {
     return false;
   }
-}
 ```
 
 ## 存入/读取数据 ##
@@ -57,8 +54,8 @@ localStorage.setItem("key","value");
 读取数据使用getItem方法。它只有一个参数，就是键名。
 
 ```
-var valueSession = sessionStorage.getItem("key");
-var valueLocal = localStorage.getItem("key");
+sessionStorage.getItem("key");
+localStorage.getItem("key");
 ```
 
 ## 清除数据 ##
