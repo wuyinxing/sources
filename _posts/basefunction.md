@@ -216,3 +216,13 @@ function $(id) {
         return days;   
     } 
 ```
+
+### 获取css中background-image的url
+
+```
+function getURl(id) { 
+    return $('#'+id).css('background-image').replace(/^url\(["']?/, '').replace(/["']?\)$/, '');
+} 
+
+```
+ 
