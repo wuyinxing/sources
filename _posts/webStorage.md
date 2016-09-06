@@ -25,7 +25,7 @@ categories : browser
 ``` 
   // sessionStorage
   if (window.sessionStorage) {
-   	// …………
+    // …………
   } else {
     return false;
   }
