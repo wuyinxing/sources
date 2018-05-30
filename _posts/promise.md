@@ -1,6 +1,7 @@
 ---
 title: Promise对象
 tags : ES6
+date: 2017-05-18 14:57:29
 categories : JavaScript
 ---
 
