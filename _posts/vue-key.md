@@ -62,7 +62,7 @@ categories : javascript
 也可以简单的理解为
 
 ```
-<A-component :key="swiperSlides.length"></A-component>
+<A-component :key="obj.length" ></A-component>
 <B-component  v-for="(item, index) in obj" :key="index" ></B-component>
 ```
 
