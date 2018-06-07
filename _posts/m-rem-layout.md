@@ -1,5 +1,6 @@
 ---
 title: rem布局移动端自适应页面
+date: 2016-10-14
 tags : layout
 categories : mobileWeb
 ---

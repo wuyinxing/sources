@@ -1,6 +1,7 @@
 ---
 title: 自己在搭建Hexo中所遇到的问题
 tags : hexo
+date: 2016-04-17
 categories : tools
 ---
 Hexo 是一个快速、简洁且高效的博客框架。Hexo 使用 Markdown（或其他渲染引擎）解析文章，在几秒内，即可利用靓丽的主题生成静态网页。[hexo.io](https://hexo.io/)

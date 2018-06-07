@@ -1,5 +1,6 @@
 ---
 title: HTML中SVG图像图像处理
+date: 2016-07-04
 tags : API
 categories : HTML
 ---

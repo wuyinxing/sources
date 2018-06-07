@@ -1,5 +1,6 @@
 ---
 title: jQuery整体架构的无new构建
+date: 2016-05-04
 tags : jQuery
 categories : JavaScript
 ---

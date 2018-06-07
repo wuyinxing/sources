@@ -1,5 +1,6 @@
 ---
 title: Nodejs中对函数有趣用法
+date: 2016-05-20
 tags : Node
 categories : Node
 ---

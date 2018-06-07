@@ -1,5 +1,6 @@
 ---
 title: Javascript模块化编程 — RequireJS
+date: 2016-09-22
 tags : require
 categories : JavaScript
 ---

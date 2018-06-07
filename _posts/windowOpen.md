@@ -1,5 +1,6 @@
 ---
 title: window.open不被拦截的解决方法之一
+date: 2016-04-20
 tags : window
 categories : trouble
 ---

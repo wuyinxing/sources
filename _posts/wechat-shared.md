@@ -1,5 +1,6 @@
 ---
 title: 微信分享和SDK
+date: 2016-08-27
 tags : wechat
 categories : JavaScript
 ---

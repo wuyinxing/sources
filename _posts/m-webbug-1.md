@@ -1,5 +1,6 @@
 ---
 title: 触发手机端浏览器中html的搜索框input
+date: 2016-05-26
 tags : form
 categories : mobileWeb
 ---

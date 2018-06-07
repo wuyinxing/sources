@@ -1,5 +1,6 @@
 ---
 title: jQuery.extend 和 jQuery.fn.extend
+date: 2016-05-16
 tags : jQuery
 categories : JavaScript
 ---

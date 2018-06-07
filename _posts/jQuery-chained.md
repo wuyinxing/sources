@@ -1,5 +1,6 @@
 ---
 title: jQuery的链式调用
+date: 2016-05-08
 tags : jQuery
 categories : JavaScript
 ---

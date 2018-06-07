@@ -1,5 +1,6 @@
 ---
 title: 原生JavaScript基础方法(连载中……)
+date: 2016-04-18
 tags : base
 categories : JavaScript
 ---

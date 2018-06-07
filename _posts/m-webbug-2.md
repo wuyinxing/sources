@@ -1,5 +1,6 @@
 ---
 title: 移动web开发中的全局设置
+date: 2016-06-08
 tags : globle
 categories : mobileWeb
 ---

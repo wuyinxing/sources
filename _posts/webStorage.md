@@ -1,5 +1,6 @@
 ---
 title: localStorage 和 sessionStorage 浏览器端数据储存
+date: 2016-11-11
 tags : API
 categories : browser
 ---
